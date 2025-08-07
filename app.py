@@ -18,6 +18,8 @@ from langdetect import detect, LangDetectException
 import tempfile
 from openpyxl import load_workbook
 
+nltk.download('punkt_tab')
+
 # --------------- Configuration ---------------
 DOCUMENTS_DIR = "data/documents"
 STORAGE_DIR = "storage"
